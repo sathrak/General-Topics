@@ -11,7 +11,7 @@
 ### GraphQL is strongly-typed: 
   A GraphQL query can be ensured to be valid within a GraphQL type system at development time allowing the server to make guarantees about the response. This makes it easier to build high-quality client tools
 
-# What is the Software Design Patterns?
+# Software Design Patterns
    Design pattern is a general reusable solution or template to a commonly occurring problem in software design. The patterns typically show relationships and interactions between classes or objects. The idea is to speed up the development process by providing tested, proven development paradigm.
    
 #### Note:
@@ -41,3 +41,31 @@
    Behavioral patterns are about identifying common communication patterns between objects and realize these patterns.
 
    Behavioral patterns are Chain of responsibility, Command, Interpreter, Iterator, Mediator, Memento, Null Object, Observer, State, Strategy, Template method, Visitor
+   
+ ##### Design patterns : singleton, repository, factory, builder, decorator, etc...
+   
+# software architectural patterns
+   These are patterns for the overall layout of your application or applications.
+
+
+
+## What are Web Services?
+   Web Services are client and server applications that communicate over the World Wide Web's (WWW) Hypertext Transfer Protocol (HTTP). As described by the World Wide Web Consortium (W3C), web services provide a standard means of interoperating between software applications running on a variety of platforms and frameworks.
+   
+   Web Services can be looked as a code on demand. Just like we call functions and methods, web services can be looked upon as calling a function or method over the internet using some sort of protocols and some agreements.
+ 
+   A web service is a function or method which we can call by sending an HTTP request to a URL, with arguments and the service returns the result back as response.
+   
+   The biggest advantage of the web services is that it is platform independent.
+   
+   
+## Types of Web Services
+### Some types of web services:
+1. SOAP Web Services (Simple Object Access Protocol.)
+2. REST Web Services (Representational State Transfer)
+3. WSDL (Web Services Description Language)
+   
+   
+
+
+   
