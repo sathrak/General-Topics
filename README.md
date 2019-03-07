@@ -119,7 +119,8 @@
    3. Broker - The broker is nothing but the application which provides access to the UDDI. The UDDI, as discussed in the earlier topic enables the client application to locate the web service. 
 
 	The diagram below showcases how the Service provider, the Service requestor and Service registry interact with each other. 
-   
+   	<img src="https://github.com/sathrak/General-Topics/blob/master/Webservice1.png" width="250">
+	
   1. Publish - A provider informs the broker (service registry) about the existence of the web service by using the broker's publish interface to make the service accessible to clients
   2. Find - The requestor consults the broker to locate a published web service
   3. Bind - With the information it gained from the broker(service registry) about the web service, the requestor is able to bind, or invoke, the web service.
