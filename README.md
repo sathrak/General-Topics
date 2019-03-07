@@ -81,9 +81,9 @@ The basic web services platform is XML + HTTP. All the standard web services wor
     3. WSDL (Web Services Description Language)
 
 ## SOAP Web Services
-	SOAP stands for Simple Object Access Protocol. It is a XML-based protocol for accessing web services. SOAP is a W3C recommendation for communication between two applications.
+SOAP stands for Simple Object Access Protocol. It is a XML-based protocol for accessing web services. SOAP is a W3C recommendation for communication between two applications.
 
-	SOAP is XML based protocol. It is platform independent and language independent. By using SOAP, you will be able to interact with other programming language applications.
+SOAP is XML based protocol. It is platform independent and language independent. By using SOAP, you will be able to interact with other programming language applications.
 
 ### Advantages of Soap Web Services
 **WS Security:** SOAP defines its own security known as WS Security.
