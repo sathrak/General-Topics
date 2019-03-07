@@ -43,178 +43,83 @@
    Behavioral patterns are Chain of responsibility, Command, Interpreter, Iterator, Mediator, Memento, Null Object, Observer, State, Strategy, Template method, Visitor
    
  ##### Design patterns : singleton, repository, factory, builder, decorator, etc...
+ 
+ References:
+	https://sourcemaking.com/design_patterns
    
 # software architectural patterns
    These are patterns for the overall layout of your application or applications.
 
 
 
-## What are Web Services?
-   Web Services are client and server applications that communicate over the World Wide Web's (WWW) Hypertext Transfer Protocol (HTTP). As described by the World Wide Web Consortium (W3C), web services provide a standard means of interoperating between software applications running on a variety of platforms and frameworks.
-   
-   Web Services can be looked as a code on demand. Just like we call functions and methods, web services can be looked upon as calling a function or method over the internet using some sort of protocols and some agreements.
- 
-   A web service is a function or method which we can call by sending an HTTP request to a URL, with arguments and the service returns the result back as response.
-   
-   The biggest advantage of the web services is that it is platform independent.
-   
-   
-## Types of Web Services
-### Some types of web services:
-1. SOAP Web Services (Simple Object Access Protocol.)
-2. REST Web Services (Representational State Transfer)
-3. WSDL (Web Services Description Language)
-   
-   
-```HTML
-<table class="MsoTableGrid" style="border-collapse: collapse; border: none; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-yfti-tbllook: 1184;" cellspacing="0" cellpadding="0" border="1">
- <tbody>
-<tr>
-  <td style="border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<b><span style="color: red; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">S.No<o:p></o:p></span></b></div>
-</td>
-  <td style="border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<b><span style="color: red; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP<o:p></o:p></span></b></div>
-</td>
-  <td style="border-left: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<b><span style="color: red; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">REST<o:p></o:p></span></b></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">1<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP is a <strong>protocol</strong>.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">REST is an <strong>architectural style</strong>.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">2<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP stands for <strong>Simple Object Access Protocol</strong>.<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">REST stands for <strong>REpresentational State Transfer</strong>.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">3<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP <strong>can't use REST</strong>
-  because it is a protocol.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">REST <strong>can use SOAP</strong> web
-  services because it is a concept and can use any protocol like HTTP, SOAP.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">4<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP <strong>uses services interfaces to expose
-  the business logic</strong>.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">REST <strong>uses URI to expose business logic</strong>.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">5<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP <strong>defines standards </strong>to
-  be strictly followed.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">REST does not define
-  too much standards like SOAP.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">6<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP <strong>defines standards </strong>to
-  be strictly followed.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">REST does not define
-  too much standards like SOAP.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">7<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP <strong>requires more bandwidth</strong>
-  and resource than REST.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">REST <strong>requires less bandwidth</strong>
-  and resource than SOAP.<span style="color: red;"><o:p></o:p></span></span></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">8<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP <strong>defines its own security</strong>.<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">RESTful web services <strong>inherits security measures</strong>
-  from the underlying transport.<o:p></o:p></span></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">9<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP <strong>permits XML</strong> data
-  format only.<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><table class="MsoNormalTable" cellpadding="0" border="0">
-   <tbody>
-<tr>
-    <td style="padding: .75pt .75pt .75pt .75pt;"></td>
-    <td style="padding: .75pt .75pt .75pt .75pt;"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-fareast-font-family: &quot;Times New Roman&quot;;">REST permits different data format such as Plain text, HTML, XML,
-    JSON etc.<o:p></o:p></span></div>
-</td>
-   </tr>
-</tbody></table>
-<div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p></o:p></span></div>
-</td>
- </tr>
-<tr>
-  <td style="border-top: none; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 35.9pt;" width="48" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">10<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 212.5pt;" width="283" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">SOAP
-  is <strong>less preferred</strong>
-  than REST.<o:p></o:p></span></div>
-</td>
-  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt 0in 5.4pt; width: 3.2in;" width="307" valign="top"><div class="MsoNormal" style="margin-bottom: 0.0001pt;">
-<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">REST <strong>more preferred</strong> than
-  SOAP.</span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-fareast-font-family: &quot;Times New Roman&quot;;"><o:p></o:p></span></div>
-</td>
- </tr>
-</tbody></table>
-```
 
+# What is Web Service?
+	A Web Service is can be defined by following ways:
+
+    1. Is a client and server application or application component for communication via the World Wide Web. .
+    2. Method of communication between two devices over network.
+    3. Is a software system for interoperable machine to machine communication.
+    4. Is a collection of standards or protocols for exchanging information between two devices or application.
+
+
+## Types of Web Services
+	There are mainly two types of web services.
+
+     1. SOAP Web Services
+	  2. REST Web Services
+
+## Components of Web Services
+
+	The basic web services platform is XML + HTTP. All the standard web services work using the following components −
+
+    1. SOAP (Simple Object Access Protocol)
+
+    2. UDDI (Universal Description, Discovery and Integration)
+
+    3. WSDL (Web Services Description Language)
+
+## SOAP Web Services
+
+	SOAP stands for Simple Object Access Protocol. It is a XML-based protocol for accessing web services. SOAP is a W3C recommendation for communication between two applications.
+
+	SOAP is XML based protocol. It is platform independent and language independent. By using SOAP, you will be able to interact with other programming language applications.
+
+
+### Advantages of Soap Web Services
+
+	WS Security: SOAP defines its own security known as WS Security.
+
+	Language and Platform independent: SOAP web services can be written in any programming language and executed in any platform.
+
+### Disadvantages of Soap Web Services
+	Slow: SOAP uses XML format that must be parsed to be read. It defines many standards that must be followed while developing the SOAP applications. So it is slow and consumes more bandwidth and resource.
+
+	WSDL dependent: SOAP uses WSDL and doesn't have any other mechanism to discover the service.
+
+
+## REST Web Services
+
+	REST stands for Representational State Transfer. REST is an architectural style not a protocol.
+
+### Advantages of REST Web Services
+
+	Fast: REST Web Services are fast because there is no strict specification like SOAP. It consumes less bandwidth and resource.
+
+	Language and Platform independent: REST web services can be written in any programming language and executed in any platform.
+
+	Can use SOAP: REST web services can use SOAP web services as the implementation.
+
+	Permits different data format: REST web service permits different data format such as Plain Text, HTML, XML and JSON.
+ 
+# Web service Architecture
+	Every framework needs some sort of architecture to make sure the entire framework works as desired. Similarly, in web services, there is an architecture which consists of three distinct roles as given below
+
+   1. Provider - The provider creates the web service and makes it available to client application who want to use it.
+   2. Requestor - A requestor is nothing but the client application that needs to contact a web service. The client application can be a .Net, Java, or any other language based application which looks for some sort of functionality via a web service.
+   3. Broker - The broker is nothing but the application which provides access to the UDDI. The UDDI, as discussed in the earlier topic enables the client application to locate the web service. 
+
+	The diagram below showcases how the Service provider, the Service requestor and Service registry interact with each other. 
    
+  1. Publish - A provider informs the broker (service registry) about the existence of the web service by using the broker's publish interface to make the service accessible to clients
+  2. Find - The requestor consults the broker to locate a published web service
+  3. Bind - With the information it gained from the broker(service registry) about the web service, the requestor is able to bind, or invoke, the web service.
