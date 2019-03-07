@@ -55,26 +55,35 @@
 
 # What is Web Service?
 A Web Service is can be defined by following ways:
-    1. Is a client and server application or application component for communication via the World Wide Web. .
+
+    1. Is a client and server application or application component for communication via the World Wide Web.
+    
     2. Method of communication between two devices over network.
+    
     3. Is a software system for interoperable machine to machine communication.
+    
     4. Is a collection of standards or protocols for exchanging information between two devices or application.
 
 ## Types of Web Services
 There are mainly two types of web services.
+
      1. SOAP Web Services
+     
      2. REST Web Services
 
 ## Components of Web Services
 The basic web services platform is XML + HTTP. All the standard web services work using the following components −
+
     1. SOAP (Simple Object Access Protocol)
+    
     2. UDDI (Universal Description, Discovery and Integration)
+    
     3. WSDL (Web Services Description Language)
 
 ## SOAP Web Services
-SOAP stands for Simple Object Access Protocol. It is a XML-based protocol for accessing web services. SOAP is a W3C recommendation for communication between two applications.
+	SOAP stands for Simple Object Access Protocol. It is a XML-based protocol for accessing web services. SOAP is a W3C recommendation for communication between two applications.
 
-SOAP is XML based protocol. It is platform independent and language independent. By using SOAP, you will be able to interact with other programming language applications.
+	SOAP is XML based protocol. It is platform independent and language independent. By using SOAP, you will be able to interact with other programming language applications.
 
 ### Advantages of Soap Web Services
 **WS Security:** SOAP defines its own security known as WS Security.
