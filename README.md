@@ -116,7 +116,23 @@ The diagram below showcases how the Service provider, the Service requestor and 
 # Software Architectural Patterns
    These are patterns for the overall layout of your application or applications.
 
+# What is an Architectural Pattern?
 
+> An architectural pattern is a general, reusable solution to a commonly occurring problem in software architecture within a given context. Architectural patterns are similar to software design pattern but have a broader scope.
+
+## *1. Layered pattern*
+## *2. Microservices pattern*
+## *3. Monolithic pattern*
+## *4. service-oriented architecture*
+## *5. Client-server pattern*
+## *6. Master-slave pattern*
+## *7. Pipe-filter pattern*
+## *8. Broker pattern*
+## *9. Peer-to-peer pattern*
+## *10. Event-bus pattern*
+## *11. Model-view-controller pattern*
+## *12. Blackboard pattern*
+## *13. Interpreter pattern*
 
 
 
