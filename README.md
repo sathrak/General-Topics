@@ -78,6 +78,7 @@ SOAP is XML based protocol. It is platform independent and language independent.
 
 ### Advantages of Soap Web Services
 **WS Security:** SOAP defines its own security known as WS Security.
+
 **Language and Platform independent:** SOAP web services can be written in any programming language and executed in any platform.
 
 ### Disadvantages of Soap Web Services
@@ -90,15 +91,20 @@ REST stands for Representational State Transfer. REST is an architectural style 
 
 ### Advantages of REST Web Services
 **Fast:** REST Web Services are fast because there is no strict specification like SOAP. It consumes less bandwidth and resource.
+
 **Language and Platform independent:** REST web services can be written in any programming language and executed in any platform.
+
 **Can use SOAP:** REST web services can use SOAP web services as the implementation.
+
 **Permits different data format:** REST web service permits different data format such as Plain Text, HTML, XML and JSON.
  
 # Web service Architecture
 Every framework needs some sort of architecture to make sure the entire framework works as desired. Similarly, in web services, there is an architecture which consists of three distinct roles as given below
 
    **1. Provider** - The provider creates the web service and makes it available to client application who want to use it.
+   
    **2. Requestor** - A requestor is nothing but the client application that needs to contact a web service. The client application can be a .Net, Java, or any other language based application which looks for some sort of functionality via a web service.
+   
    **3. Broker** - The broker is nothing but the application which provides access to the UDDI. The UDDI, as discussed in the earlier topic enables the client application to locate the web service. 
 
 The diagram below showcases how the Service provider, the Service requestor and Service registry interact with each other. 
@@ -106,5 +112,7 @@ The diagram below showcases how the Service provider, the Service requestor and 
 <img src="https://github.com/sathrak/General-Topics/blob/master/Webservice1.png" width="250">
 	
   **1. Publish** - A provider informs the broker (service registry) about the existence of the web service by using the broker's publish interface to make the service accessible to clients
+  
   **2. Find** - The requestor consults the broker to locate a published web service
+  
   **3. Bind** - With the information it gained from the broker(service registry) about the web service, the requestor is able to bind, or invoke, the web service.
