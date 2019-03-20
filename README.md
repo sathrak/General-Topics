@@ -134,5 +134,5 @@ The diagram below showcases how the Service provider, the Service requestor and 
 ## *12. Blackboard pattern*
 ## *13. Interpreter pattern*
 
-
-
+# What is the memory limit on a node process?
+   Default V8 has a memory limit of 512mb on 32-bit systems, and 1gb on 64-bit systems. The limit can be raised by setting --max-old-space-size to a maximum of ~1gb (32-bit) and ~1.7gb (64-bit), but it is recommended that you split your single process into several workers if you are hitting memory limits.
