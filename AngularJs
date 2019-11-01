@@ -1,6 +1,5 @@
                               Angular@7
                       =========================
-
 # What,Why, use in (google)angular Js?
   - Angular 7 is an open source JavaScript framework.
   - Angular is the most stable and most popular javascript based platform now-a-days.
@@ -24,3 +23,29 @@
    4. Typescript - Typescript is super set of javascript and is easy to debug. It is highly secure and is object oriented.
    5. Modular Structure - Angular development is highly modular, is component based and is highly maintainable.
    6. Multi-platform support - Angular code works well on all platforms without much change in code.
+   
+# Angular Update to V7
+    - Angular 7 is a major release where in the angular core framework, Angular CLI, Angular Materials are updated.
+    - The version of Angular Material/CDK is updated in Angular 7. Also there are 2 features added to CDK − virtual scrolling, and drag and drop.
+    
+# Update Command - ng update @angular/cli @angular/core
+
+# Environment Setup required for Angular 7. To install Angular 7, we require the following −
+   1. Nodejs(8.x or 10.x)
+   2. Npm(5.6 or 6.5)
+   3. Angular CLI
+   4. IDE for writing your code
+
+# installations - Open CMD and type the below command
+    - npm install –g @angular/cli
+    - ng new <Application Name>
+    - cd <Application Name>
+    - ng serve --host xxx.xxx.xx.x --port 8800
+    - ng version (Chech the angular version and installation)
+    
+We will consider the angular7-app project. Let us open the angular7-app and see how the folder structure looks like.
+
+    https://www.tutorialspoint.com/angular7/images/angular7_app.jpg
+    
+    
+    
