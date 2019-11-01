@@ -1,1 +1,26 @@
-Angular@7
+                              Angular@7
+                      =========================
+
+# What,Why, use in (google)angular Js?
+  - Angular 7 is an open source JavaScript framework.
+  - Angular is the most stable and most popular javascript based platform now-a-days.
+  - Building web applications and apps.
+    * Web developer
+    * Web app developer
+    * UI developer
+    * UX developer
+    * Front-end developer
+    * JavaScript developer
+  - Use JavaScript, html, and Typescript which is a superset of JavaScript.
+  
+# Angular Features(build-in) 
+  - Angular provides built-in features for animation, http service, and materials which in turn have features such as auto-complete, navigation, toolbar, menus, etc.
+  - The code is written in Typescript, which compiles to JavaScript and displays the same in the browser.
+  
+ # Applications of Angular 7
+   1. Google Supported Community - Google actively supports Angular and its development. Angular is used in various Google Apps.
+   2. POJO based development - Angular heavily used Plain Old JavaScript Object and it helps in learning Angular in an easier way.
+   3. Declarative User Interface - Angular uses HTML as view language and extends its functionality. It helps in handling UI vs code differentiation and UI is loosely coupled with code.
+   4. Typescript - Typescript is super set of javascript and is easy to debug. It is highly secure and is object oriented.
+   5. Modular Structure - Angular development is highly modular, is component based and is highly maintainable.
+   6. Multi-platform support - Angular code works well on all platforms without much change in code.
