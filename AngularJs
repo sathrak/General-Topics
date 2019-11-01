@@ -71,8 +71,8 @@
     6. tslint.json − This is the config file with rules to be considered while compiling.
 
     The src/ folder is the main folder, which internally has a different file structure.
-
-    ****************** app *******************
+    
+app ------------
     It contains the files described below. These files are installed by angular-cli by default.
     
     
