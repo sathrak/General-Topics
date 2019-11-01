@@ -40,12 +40,41 @@
     - npm install –g @angular/cli
     - ng new <Application Name>
     - cd <Application Name>
-    - ng serve --host xxx.xxx.xx.x --port 8800
+    - ng serve --host 0.0.0.0 --port 8800
     - ng version (Chech the angular version and installation)
     
-We will consider the angular7-app project. Let us open the angular7-app and see how the folder structure looks like.
+# Folder Structure & File Structure
 
+  We will consider the angular7-app project. Let us open the angular7-app and see how the folder structure looks like.
     https://www.tutorialspoint.com/angular7/images/angular7_app.jpg
     
+  The angular7-app/ folder has the following folder structure−
+  
+    1. e2e/ − end to end test folder. Mainly e2e is used for integration testing and helps ensure the application works fine.
+
+    2. node_modules/ − The npm package installed is node_modules. You can open the folder and see the packages available.
+
+    3. src/ − This folder is where we will work on the project using Angular 7.Inside src/ you will app/ folder created during the project setup and holds all the required files required for the project.
+    
+ The angular7-app/ folder has the following file structure −
+
+    1. angular.json − It basically holds the project name, version of cli, etc.
+
+    2. .editorconfig − This is the config file for the editor.
+
+    3. .gitignore − A .gitignore file should be committed into the repository, in order to share the ignore rules with any other users that clone the repository.
+
+    4. package.json − The package.json file tells which libraries will be installed into node_modules when you run npm install.
+    
+    5. tsconfig.json − This basically contains the compiler options required during compilation.
+
+    6. tslint.json − This is the config file with rules to be considered while compiling.
+
+    The src/ folder is the main folder, which internally has a different file structure.
+
+    ****************** app *******************
+    It contains the files described below. These files are installed by angular-cli by default.
     
     
+
+
