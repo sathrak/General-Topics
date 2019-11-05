@@ -187,3 +187,32 @@ What is a Angular js Modules?
     Providers - This will include the services created.
     
     Bootstrap - This includes the main app component for starting the execution.
+    
+    
+Angular7 - Data Binding
+  We use curly braces for data binding - {{}}; this process is called interpolation.
+  
+  What is interpolation in Angular JS?
+      Interpolation markup with embedded expressions will provide data-binding to text nodes and attribute values. The AngularJS allows the user to manually run the template compilation. Interpolation allows us to live update a string of text based upon conditions of a scope, for instance.
+app.component.ts
+
+
+app.component.html
+      <div style = "text-align:center"> 
+         <h1> Welcome to {{title}}. </h1> 
+      </div>
+
+      <div> Months : 
+         <select> 
+            <option *ngFor="let i of months">{{i}}</option>
+         </select> 
+      </div> 
+      <br/>
+
+      <div> 
+         <span *ngIf = "isavailable; then condition1 else condition2">
+            Condition is valid.
+         </span> 
+         <ng-template #condition1>Condition is valid</ng-template> 
+         <ng-template #condition2>Condition is invalid</ng-template> 
+      </div>
