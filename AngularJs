@@ -75,6 +75,115 @@
 app ------------
     It contains the files described below. These files are installed by angular-cli by default.
     
+    app  
+      app.module.ts
+      app.component.html
+      app.component.spec.ts
+      app.component.ts
+      app-routing.module.ts
+    Assets              - You can save your images, js files in this folder.
     
+    Environment         - This folder has details for the production or the dev environment.The folder contains two files.
+      environment.prod.ts
+      environment.ts
+      
+    favicon.ico         - This is a file that is usually found in the root directory of a website.
+    
+    index.html          - This is the file which is displayed in the browser.
+                          <html lang = "en"> 
+                             <head>
+                                <meta charset = "utf-8"7gt;
+                                <title>Angular7App</title> 
+                                <base href = "/">
+                                <meta name = "viewport" content = "width=device-width, initial-scale=1"> 
+                                <link rel = "icon" type = "image/x-icon" href = "favicon.ico"> 
+                             </head> 
+                             <body> 
+                                <app-root></app-root> 
+                             </body> 
+                          </html>
+                          
+    main.ts             - It starts with importing the basic module which we need. Right now if you see angular/core,     
+                          angular/platform-browser-dynamic, app.module and environment is imported by default during angular-cli 
+                          installation and project setup.
+    
+    polyfill.ts         - This is mainly used for backward compatibility.
+    
+    styles.css          - This is the style file required for the project.
+    
+    test.ts             - The unit test cases for testing the project will be handled.
+    
+    tsconfig.app.json   - This is used during compilation, it has the config details that need to be used to run the application.
+    
+    tsconfig.spec.json  - This helps maintain the details for testing.
+    
+    typings.d.ts        - It is used to manage the Typescript definition.
+    
+    
+ Angular7 - Component
+ 
+ What Is an Angular Component?
+     Components are the most basic building block of an UI in an Angular application. An Angular application is a tree of Angular 
+     components. Angular components are a subset of directives. Unlike directives, components always have a template and only 
+     one component can be instantiated per an element in a template.
+     
+    Components are defined using the @component decorator. A component has a selector, template, style and other properties.
+    
+    The file structure has the app component and it consists of the following files −
+        app.component.css
+        app.component.html
+        app.component.spec.ts
+        app.component.ts
+        app.module.ts
 
+    And if you have selected angular routing during your project setup, files related to routing will also get added and the files are as follows −
+        app-routing.module.ts
+    
+    - angular-cli has a command to create your own component.     
+        ng g component new-cmp
+        
 
+  > ng generate component nav
+  // output
+
+  > ng g c about
+  // output
+
+  > ng g c contact
+  // output
+
+  > ng g c home
+  // output
+
+Angular7 - Modules
+
+What is a Angular js Modules?
+   In Angular, a module is a mechanism to group components, directives, pipes and services that are related, in such a way that  
+   can be combined with other modules to create an application.
+   
+   To define module, we can use the NgModule.   
+      import { NgModule } from '@angular/core';
+
+  The structure for the ngmodule is as shown below −
+      @NgModule({ 
+         declarations: [
+            AppComponent, 
+            NewCmpComponent 
+         ],
+         imports: [ 
+            BrowserModule, 
+            AppRoutingModule 
+         ], 
+         providers: [], 
+         bootstrap: [AppComponent] 
+      })
+      
+ @NgModule and contains an object which has declarations, imports, providers and bootstrap.
+ 
+    Declaration - It is an array of components created.
+
+    Import - It is an array of modules required to be used in the application.
+    
+    Providers - This will include the services created.
+    
+    Bootstrap - This includes the main app component for starting the execution.
