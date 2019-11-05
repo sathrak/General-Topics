@@ -231,3 +231,64 @@ app.component.html
          <ng-template #condition1>Condition is valid</ng-template> 
          <ng-template #condition2>Condition is invalid</ng-template> 
       </div>
+      
+      
+      
+Angular7 - Event Binding
+
+What is a Event Binding?
+   When a user interacts with an application in the form of a keyboard movement, a mouse click, or a mouse over, it generates an event. These events need to be handled to perform some kind of action.
+   
+   
+app.component.ts
+      myClickFunction(event) {
+        //just added console.log which will display the event details in browser on click of the button.
+        alert("Button is clicked");
+        console.log(event);
+     }
+     
+     changemonths(event) {
+        console.log("Changed month from the Dropdown");
+        console.log(event);
+     }
+
+app.component.html
+
+       <select (change) = "changemonths($event)">
+            <option *ngFor = "let i of months">{{i}}</option>
+       </select>
+       
+      <button (click) = "myClickFunction($event)">
+         Click Me
+      </button>
+      
+Angular7 - Templates
+      Angular 7 uses the <ng-template> as the tag instead of <template>which is used in Angular2. <ng-template> has been in use 
+      since the release of Angular 4 , and the earlier version i.e Angular 2 uses <template> for the same purpose
+   
+   <template> to <ng-template> This was one of the major changes made in Angular 4 version.
+   
+   
+ The templates are to be called as follows −
+      <ng-template #condition1>Condition is valid from template</ng-template> 
+      <ng-template #condition2>Condition is invalid from template</ng-template>
+      
+app.component.ts    
+     myClickFunction(event) { 
+      this.isavailable = !this.isavailable; 
+      // variable is toggled onclick of the button 
+     } 
+     
+app.component.html 
+     <div> 
+       <span *ngIf = "isavailable; else condition2">
+          Condition is valid.
+       </span>
+       <ng-template #condition1>Condition is valid from template </ng-template> 
+       <ng-template #condition2>Condition is invalid from template</ng-template> 
+    </div>
+     
+     <button (click) = "myClickFunction($event)">Click Me</button>
+     
+     
+     
