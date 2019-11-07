@@ -319,4 +319,56 @@
      
 # Angular7 - Directives :
 =========================
-     
+    Directives are instructions in the DOM. They specify how to place your components and business logic in the Angular.
+
+    Directives are js class and declared as @directive. There are 3 directives in Angular.
+
+        Component Directives
+        Structural Directives
+        Attribute Directives
+
+    Component Directives: Component directives are used in main class. They contain the detail of how the component should be processed, instantiated and used at runtime.
+
+    Structural Directives: Structural directives start with a * sign. These directives are used to manipulate and change the structure of the DOM elements. For example, *ngIf and *ngFor.
+
+    Attribute Directives: Attribute directives are used to change the look and behavior of the DOM elements. For example: ngClass, ngStyle etc.
+    
+    
+# Angular 7 Pipes :
+===================
+    In Angular 1, filters are used which are later called Pipes onwards Angular2. In Angular 7, it is known as pipe and used to transform data. It is denoted by symbol |.
+    
+    Use the pipe symbol in component.html file:
+        <h1>  
+           {{ title | uppercase }} <br/></h1>  
+        <h1>  
+          {{ title | lowercase }} <br/></h1>  
+    
+    Angular 7 provides some built-in pipes:
+        Lowercasepipe
+        Uppercasepipe
+        Datepipe
+        Currencypipe
+        Jsonpipe
+        Percentpipe
+        Decimalpipe
+        Slicepipe
+
+# Angular7 - Routing :
+======================
+    Routing basically means navigating between pages. You have seen many sites with links that direct you to a new page. This can be achieved using routing. Here the pages that we are referring to will be in the form of components. 
+    import { NgModule } from '@angular/core'; 
+    import { Routes, RouterModule } from '@angular/router'; 
+    import { HomeComponent } from './home/home.component'; 
+    import { ContactusComponent } from './contactus/contactus.component';
+
+    const routes: Routes = [ 
+       {path:"home", component:HomeComponent}, 
+       {path:"contactus", component:ContactusComponent} 
+    ];
+    @NgModule({ 
+       imports: [RouterModule.forRoot(routes)], 
+       exports: [RouterModule] 
+    })
+    export class AppRoutingModule { }
+    
