@@ -357,18 +357,31 @@
 # Angular7 - Routing :
 ======================
     Routing basically means navigating between pages. You have seen many sites with links that direct you to a new page. This can be achieved using routing. Here the pages that we are referring to will be in the form of components. 
-    import { NgModule } from '@angular/core'; 
-    import { Routes, RouterModule } from '@angular/router'; 
-    import { HomeComponent } from './home/home.component'; 
-    import { ContactusComponent } from './contactus/contactus.component';
-
-    const routes: Routes = [ 
-       {path:"home", component:HomeComponent}, 
-       {path:"contactus", component:ContactusComponent} 
-    ];
-    @NgModule({ 
-       imports: [RouterModule.forRoot(routes)], 
-       exports: [RouterModule] 
-    })
-    export class AppRoutingModule { }
     
+        import { NgModule } from '@angular/core'; 
+        import { Routes, RouterModule } from '@angular/router'; 
+        import { HomeComponent } from './home/home.component'; 
+        import { ContactusComponent } from './contactus/contactus.component';
+
+        const routes: Routes = [ 
+           {path:"home", component:HomeComponent}, 
+           {path:"contactus", component:ContactusComponent} 
+        ];
+        @NgModule({ 
+           imports: [RouterModule.forRoot(routes)], 
+           exports: [RouterModule] 
+        })
+        export class AppRoutingModule { }
+    
+    The array of components i.e., RoutingComponent is imported in app.module.ts
+      @NgModule({ 
+         declarations: [ 
+            SqrtPipe,
+            AppComponent, 
+            NewCmpComponent, 
+            ChangeTextDirective, 
+            RoutingComponent 
+         ]
+
+# Angular7 - Services :
+=======================
