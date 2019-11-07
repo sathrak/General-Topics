@@ -385,3 +385,45 @@
 
 # Angular7 - Services :
 =======================
+    We might come across a situation where we need some code to be used everywhere on the page.
+    we can access methods and properties across other components in the entire project.
+    
+    To create a service, we need to make use of the command line as given below −
+        ng g service myservice
+        
+        C:\projectA7\angular7-app>ng g service myservice 
+        CREATE src/app/myservice.service.spec.ts (348 bytes) 
+        CREATE src/app/myservice.service.ts (138 bytes)
+        
+    => myservice.service.ts
+          import { Injectable } from '@angular/core';
+          @Injectable({
+             providedIn: 'root' 
+          }) 
+          export class MyserviceService {
+             constructor() { }
+          }
+          
+      Here, the injectable module is imported from the @angular/core. It contains the @Injectable method and a class called MyserviceService.
+          
+          import { MyserviceService } from './myservice.service';
+            @NgModule({ 
+               declarations: [
+                  SqrtPipe, 
+                  AppComponent, 
+                  NewCmpComponent, 
+                  ChangeTextDirective, 
+                  RoutingComponent 
+               ], 
+               imports: [ 
+                  BrowserModule, 
+                  AppRoutingModule
+               ], 
+               providers: [MyserviceService], 
+               bootstrap: [AppComponent] 
+            })
+            export class AppModule { }
+      
+# Angular7 - Http Client:
+=========================
+    HttpClient will help us fetch external data, post to it, etc. We need to import the http module to make use of the http service.
