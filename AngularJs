@@ -11,6 +11,7 @@
     * Front-end developer
     * JavaScript developer
   - Use JavaScript, html, and Typescript which is a superset of JavaScript.
+  - Angular is a modern MVVC framework and platform that is used to build enterprise Single-page Web Applications (or SPAs) using HTML and TypeScript. Angular is written in TypeScript
   
 # Angular Features(build-in) 
   - Angular provides built-in features for animation, http service, and materials which in turn have features such as auto-complete, navigation, toolbar, menus, etc.
