@@ -1,4 +1,4 @@
-                              # Angular@7 #
+# Angular JS @7
                       
 ## What,Why, use in (google)angular Js?
   - Angular 7 is an open source JavaScript framework.
@@ -29,13 +29,13 @@
     - Angular 7 is a major release where in the angular core framework, Angular CLI, Angular Materials are updated.
     - The version of Angular Material/CDK is updated in Angular 7. Also there are 2 features added to CDK − virtual scrolling, and drag and drop.
     
-## Update Command - ng update @angular/cli @angular/core
+**Update Command -** ng update @angular/cli @angular/core
 
 ## Environment Setup required for Angular 7. To install Angular 7, we require the following −
-   1. Nodejs(8.x or 10.x)
-   2. Npm(5.6 or 6.5)
-   3. Angular CLI
-   4. IDE for writing your code
+     1. Nodejs(8.x or 10.x)
+     2. Npm(5.6 or 6.5)
+     3. Angular CLI
+     4. IDE for writing your code
 
 ## installations - Open CMD and type the below command
     - npm install –g @angular/cli
@@ -45,9 +45,6 @@
     - ng version (Chech the angular version and installation)
     
 ## Folder Structure & File Structure
-
-  We will consider the angular7-app project. Let us open the angular7-app and see how the folder structure looks like.
-    https://www.tutorialspoint.com/angular7/images/angular7_app.jpg
     
   ### The angular7-app/ folder has the following folder structure−
   
@@ -396,7 +393,7 @@
           }
           
       Here, the injectable module is imported from the @angular/core. It contains the @Injectable method and a class called MyserviceService.
-          
+          ```
           import { MyserviceService } from './myservice.service';
             @NgModule({ 
                declarations: [
@@ -413,7 +410,7 @@
                providers: [MyserviceService], 
                bootstrap: [AppComponent] 
             })
-            export class AppModule { }
+            export class AppModule { }```
       
 ## Angular7 - Http Client:
     HttpClient will help us fetch external data, post to it, etc. We need to import the http module to make use of the http service.
