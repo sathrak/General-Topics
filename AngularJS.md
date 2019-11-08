@@ -25,7 +25,7 @@
    5. Modular Structure - Angular development is highly modular, is component based and is highly maintainable.
    6. Multi-platform support - Angular code works well on all platforms without much change in code.
    
-## Angular Update to V7
+## Angular Update to V7 
     - Angular 7 is a major release where in the angular core framework, Angular CLI, Angular Materials are updated.
     - The version of Angular Material/CDK is updated in Angular 7. Also there are 2 features added to CDK − virtual scrolling, and drag and drop.
     
@@ -118,299 +118,298 @@
     typings.d.ts        - It is used to manage the Typescript definition.
     
     
-## Angular7 - Component :
-    ### What Is an Angular Component?
-         Components are the most basic building block of an UI in an Angular application. An Angular application is a tree of Angular 
-         components. Angular components are a subset of directives. Unlike directives, components always have a template and only 
-         one component can be instantiated per an element in a template.
+## Angular7 - Component
+   ### What Is an Angular Component?
+       Components are the most basic building block of an UI in an Angular application. An Angular application is a tree of Angular 
+       components. Angular components are a subset of directives. Unlike directives, components always have a template and only 
+       one component can be instantiated per an element in a template.
 
-        Components are defined using the @component decorator. A component has a selector, template, style and other properties.
+      Components are defined using the @component decorator. A component has a selector, template, style and other properties.
 
-        The file structure has the app component and it consists of the following files −
-            app.component.css
-            app.component.html
-            app.component.spec.ts
-            app.component.ts
-            app.module.ts
+      The file structure has the app component and it consists of the following files −
+          app.component.css
+          app.component.html
+          app.component.spec.ts
+          app.component.ts
+          app.module.ts
 
-        And if you have selected angular routing during your project setup, files related to routing will also get added and the files are as follows −
-            app-routing.module.ts
+      And if you have selected angular routing during your project setup, files related to routing will also get added and the files are as follows −
+          app-routing.module.ts
 
-    ### angular-cli has a command to create your own component.     
-        ng g component new-cmp
+### angular-cli has a command to create your own component.     
+   #### ng g component new-cmp
 
-      ```
-      > ng generate component nav
-      // output
+    ```
+    > ng generate component nav
+    // output
 
-      > ng g c about
-      // output
+    > ng g c about
+    // output
 
-      > ng g c contact
-      // output
+    > ng g c contact
+    // output
 
-      > ng g c home
-      // output ```
+    > ng g c home
+    // output ```
 
 ## Angular7 - Modules :
-    ### What is a Angular js Modules?
-       In Angular, a module is a mechanism to group components, directives, pipes and services that are related, in such a way that  
-       can be combined with other modules to create an application.
+  ### What is a Angular js Modules?
+     In Angular, a module is a mechanism to group components, directives, pipes and services that are related, in such a way that  
+     can be combined with other modules to create an application.
 
-       To define module, we can use the NgModule.   
-          import { NgModule } from '@angular/core';
+     To define module, we can use the NgModule.   
+        import { NgModule } from '@angular/core';
 
-      #### The structure for the ngmodule is as shown below −
-          @NgModule({ 
-             declarations: [
-                AppComponent, 
-                NewCmpComponent 
-             ],
-             imports: [ 
-                BrowserModule, 
-                AppRoutingModule 
-             ], 
-             providers: [], 
-             bootstrap: [AppComponent] 
-          })
+  #### The structure for the ngmodule is as shown below −
+      @NgModule({ 
+         declarations: [
+            AppComponent, 
+            NewCmpComponent 
+         ],
+         imports: [ 
+            BrowserModule, 
+            AppRoutingModule 
+         ], 
+         providers: [], 
+         bootstrap: [AppComponent] 
+      })
 
-        @NgModule and contains an object which has declarations, imports, providers and bootstrap.
+    @NgModule and contains an object which has declarations, imports, providers and bootstrap.
 
-            Declaration - It is an array of components created.
+        Declaration - It is an array of components created.
 
-            Import - It is an array of modules required to be used in the application.
+        Import - It is an array of modules required to be used in the application.
 
-            Providers - This will include the services created.
+        Providers - This will include the services created.
 
-            Bootstrap - This includes the main app component for starting the execution.
+        Bootstrap - This includes the main app component for starting the execution.
 
     
 ## Angular7 - Data Binding :
 
     We use curly braces for data binding - {{}}; this process is called interpolation.
 
-    ### What is interpolation in Angular JS?
-        Interpolation markup with embedded expressions will provide data-binding to text nodes and attribute values. The AngularJS allows the user to manually run the template compilation. Interpolation allows us to live update a string of text based upon conditions of a scope, for instance.
+   ### What is interpolation in Angular JS?
+       Interpolation markup with embedded expressions will provide data-binding to text nodes and attribute values. The AngularJS allows the user to manually run the template compilation. Interpolation allows us to live update a string of text based upon conditions of a scope, for instance.
 
-    ### app.component.ts
-          import { Component } from '@angular/core';
-          @Component({
-             selector: 'app-root', 
-             templateUrl: './app.component.html', 
-             styleUrls: ['./app.component.css'] 
-          }) 
-          export class AppComponent { 
-             title = 'Angular 7'; 
+  ### app.component.ts
+        import { Component } from '@angular/core';
+        @Component({
+           selector: 'app-root', 
+           templateUrl: './app.component.html', 
+           styleUrls: ['./app.component.css'] 
+        }) 
+        export class AppComponent { 
+           title = 'Angular 7'; 
 
-             // declared array of months. 
-             months = ["January", "February", "March", "April", "May", "June", "July", 
-                "August", "September", "October", "November", "December"]; 
+           // declared array of months. 
+           months = ["January", "February", "March", "April", "May", "June", "July", 
+              "August", "September", "October", "November", "December"]; 
 
-             isavailable = true; //variable is set to true 
-          }
+           isavailable = true; //variable is set to true 
+        }
 
-    ### app.component.html
-          <div style = "text-align:center"> 
-             <h1> Welcome to {{title}}. </h1> 
-          </div>
+  ### app.component.html
+        <div style = "text-align:center"> 
+           <h1> Welcome to {{title}}. </h1> 
+        </div>
 
-          <div> Months : 
-             <select> 
-                <option *ngFor="let i of months">{{i}}</option>
-             </select> 
-          </div> 
-          <br/>
+        <div> Months : 
+           <select> 
+              <option *ngFor="let i of months">{{i}}</option>
+           </select> 
+        </div> 
+        <br/>
 
-          <div> 
-             <span *ngIf = "isavailable; then condition1 else condition2">
-                Condition is valid.
-             </span> 
-             <ng-template #condition1>Condition is valid</ng-template> 
-             <ng-template #condition2>Condition is invalid</ng-template> 
-          </div>
-      
-      
+        <div> 
+           <span *ngIf = "isavailable; then condition1 else condition2">
+              Condition is valid.
+           </span> 
+           <ng-template #condition1>Condition is valid</ng-template> 
+           <ng-template #condition2>Condition is invalid</ng-template> 
+        </div>
+            
 ## Angular7 - Event Binding :
 
-    ### What is a Event Binding?
-       When a user interacts with an application in the form of a keyboard movement, a mouse click, or a mouse over, it generates an event. These events need to be handled to perform some kind of action.
+  ### What is a Event Binding?
+     When a user interacts with an application in the form of a keyboard movement, a mouse click, or a mouse over, it generates an event. These events need to be handled to perform some kind of action.
 
 
-    ### app.component.ts
-          myClickFunction(event) {
-            //just added console.log which will display the event details in browser on click of the button.
-            alert("Button is clicked");
-            console.log(event);
-         }
+  ### app.component.ts
+        myClickFunction(event) {
+          //just added console.log which will display the event details in browser on click of the button.
+          alert("Button is clicked");
+          console.log(event);
+       }
 
-         changemonths(event) {
-            console.log("Changed month from the Dropdown");
-            console.log(event);
-         }
+       changemonths(event) {
+          console.log("Changed month from the Dropdown");
+          console.log(event);
+       }
 
-    ### app.component.html
-           <select (change) = "changemonths($event)">
-                <option *ngFor = "let i of months">{{i}}</option>
-           </select>
+  ### app.component.html
+         <select (change) = "changemonths($event)">
+              <option *ngFor = "let i of months">{{i}}</option>
+         </select>
 
-          <button (click) = "myClickFunction($event)">
-             Click Me
-          </button>
-          
-          Event Listing :
-            (focus)="myMethod()"
-            (blur)="myMethod()" 
-            (submit)="myMethod()"  
-            (scroll)="myMethod()"
+        <button (click) = "myClickFunction($event)">
+           Click Me
+        </button>
 
-            (cut)="myMethod()"
-            (copy)="myMethod()"
-            (paste)="myMethod()"
+        Event Listing :
+          (focus)="myMethod()"
+          (blur)="myMethod()" 
+          (submit)="myMethod()"  
+          (scroll)="myMethod()"
 
-            (keydown)="myMethod()"
-            (keypress)="myMethod()"
-            (keyup)="myMethod()"
+          (cut)="myMethod()"
+          (copy)="myMethod()"
+          (paste)="myMethod()"
 
-            (mouseenter)="myMethod()"
-            (mousedown)="myMethod()"
-            (mouseup)="myMethod()"
+          (keydown)="myMethod()"
+          (keypress)="myMethod()"
+          (keyup)="myMethod()"
 
-            (click)="myMethod()"
-            (dblclick)="myMethod()"
+          (mouseenter)="myMethod()"
+          (mousedown)="myMethod()"
+          (mouseup)="myMethod()"
 
-            (drag)="myMethod()"
-            (dragover)="myMethod()"
-            (drop)="myMethod()"
+          (click)="myMethod()"
+          (dblclick)="myMethod()"
+
+          (drag)="myMethod()"
+          (dragover)="myMethod()"
+          (drop)="myMethod()"
       
 ## Angular7 - Templates :
-    Angular 7 uses the <ng-template> as the tag instead of <template>which is used in Angular2. <ng-template> has been in use 
-    since the release of Angular 4 , and the earlier version i.e Angular 2 uses <template> for the same purpose
-   
-    ### <template> to <ng-template> This was one of the major changes made in Angular 4 version.
-   
-   
-    ### The templates are to be called as follows −
-        <ng-template #condition1>Condition is valid from template</ng-template> 
-        <ng-template #condition2>Condition is invalid from template</ng-template>
+  Angular 7 uses the <ng-template> as the tag instead of <template>which is used in Angular2. <ng-template> has been in use 
+  since the release of Angular 4 , and the earlier version i.e Angular 2 uses <template> for the same purpose
 
-    ### app.component.ts    
-       myClickFunction(event) { 
-        this.isavailable = !this.isavailable; 
-        // variable is toggled onclick of the button 
-       } 
+  ### <template> to <ng-template> This was one of the major changes made in Angular 4 version.
 
-    ### app.component.html 
-       <div> 
-         <span *ngIf = "isavailable; else condition2">
-            Condition is valid.
-         </span>
-         <ng-template #condition1>Condition is valid from template </ng-template> 
-         <ng-template #condition2>Condition is invalid from template</ng-template> 
-      </div>
 
-     <button (click) = "myClickFunction($event)">Click Me</button>
+  ### The templates are to be called as follows −
+      <ng-template #condition1>Condition is valid from template</ng-template> 
+      <ng-template #condition2>Condition is invalid from template</ng-template>
+
+  ### app.component.ts    
+     myClickFunction(event) { 
+      this.isavailable = !this.isavailable; 
+      // variable is toggled onclick of the button 
+     } 
+
+  ### app.component.html 
+     <div> 
+       <span *ngIf = "isavailable; else condition2">
+          Condition is valid.
+       </span>
+       <ng-template #condition1>Condition is valid from template </ng-template> 
+       <ng-template #condition2>Condition is invalid from template</ng-template> 
+    </div>
+
+   <button (click) = "myClickFunction($event)">Click Me</button>
      
 ## Angular7 - Directives :
-    Directives are instructions in the DOM. They specify how to place your components and business logic in the Angular.
+  Directives are instructions in the DOM. They specify how to place your components and business logic in the Angular.
 
-    Directives are js class and declared as @directive. There are 3 directives in Angular.
-      ### Component Directives
-      ### Structural Directives
-      ### Attribute Directives
+  Directives are js class and declared as @directive. There are 3 directives in Angular.
+   #### Component Directives
+   #### Structural Directives
+   #### Attribute Directives
 
-    Component Directives: Component directives are used in main class. They contain the detail of how the component should be processed, instantiated and used at runtime.
+  **Component Directives:** Component directives are used in main class. They contain the detail of how the component should be processed, instantiated and used at runtime.
 
-    Structural Directives: Structural directives start with a * sign. These directives are used to manipulate and change the structure of the DOM elements. For example, *ngIf and *ngFor.
+  **Structural Directives:** Structural directives start with a * sign. These directives are used to manipulate and change the structure of the DOM elements. For example, *ngIf and *ngFor.
 
-    Attribute Directives: Attribute directives are used to change the look and behavior of the DOM elements. For example: ngClass, ngStyle etc.
-    
+  **Attribute Directives:** Attribute directives are used to change the look and behavior of the DOM elements. For example: ngClass, ngStyle etc.
+
     
 ## Angular 7 Pipes :
     In Angular 1, filters are used which are later called Pipes onwards Angular2. In Angular 7, it is known as pipe and used to transform data. It is denoted by symbol |.
-    
-    ### Use the pipe symbol in component.html file:
-        <h1>  
-           {{ title | uppercase }} <br/></h1>  
-        <h1>  
-          {{ title | lowercase }} <br/></h1>  
-    
-    ### Angular 7 provides some built-in pipes:
-        Lowercasepipe
-        Uppercasepipe
-        Datepipe
-        Currencypipe
-        Jsonpipe
-        Percentpipe
-        Decimalpipe
-        Slicepipe
+
+  ### Use the pipe symbol in component.html file:
+      <h1>  
+         {{ title | uppercase }} <br/></h1>  
+      <h1>  
+        {{ title | lowercase }} <br/></h1>  
+
+  ### Angular 7 provides some built-in pipes:
+      Lowercasepipe
+      Uppercasepipe
+      Datepipe
+      Currencypipe
+      Jsonpipe
+      Percentpipe
+      Decimalpipe
+      Slicepipe
 
 ## Angular7 - Routing :
     Routing basically means navigating between pages. You have seen many sites with links that direct you to a new page. This can be achieved using routing. Here the pages that we are referring to will be in the form of components. 
     
-        import { NgModule } from '@angular/core'; 
-        import { Routes, RouterModule } from '@angular/router'; 
-        import { HomeComponent } from './home/home.component'; 
-        import { ContactusComponent } from './contactus/contactus.component';
+      import { NgModule } from '@angular/core'; 
+      import { Routes, RouterModule } from '@angular/router'; 
+      import { HomeComponent } from './home/home.component'; 
+      import { ContactusComponent } from './contactus/contactus.component';
 
-        const routes: Routes = [ 
-           {path:"home", component:HomeComponent}, 
-           {path:"contactus", component:ContactusComponent} 
-        ];
-        @NgModule({ 
-           imports: [RouterModule.forRoot(routes)], 
-           exports: [RouterModule] 
-        })
-        export class AppRoutingModule { }
-    
-    The array of components i.e., RoutingComponent is imported in app.module.ts
+      const routes: Routes = [ 
+         {path:"home", component:HomeComponent}, 
+         {path:"contactus", component:ContactusComponent} 
+      ];
       @NgModule({ 
-         declarations: [ 
-            SqrtPipe,
-            AppComponent, 
-            NewCmpComponent, 
-            ChangeTextDirective, 
-            RoutingComponent 
-         ]
+         imports: [RouterModule.forRoot(routes)], 
+         exports: [RouterModule] 
+      })
+      export class AppRoutingModule { }
+
+  The array of components i.e., RoutingComponent is imported in app.module.ts
+    @NgModule({ 
+       declarations: [ 
+          SqrtPipe,
+          AppComponent, 
+          NewCmpComponent, 
+          ChangeTextDirective, 
+          RoutingComponent 
+       ]
 
 ## Angular7 - Services :
-    We might come across a situation where we need some code to be used everywhere on the page.
-    we can access methods and properties across other components in the entire project.
-    
-    ### To create a service, we need to make use of the command line as given below −
-        ng g service myservice
-        
-        C:\projectA7\angular7-app>ng g service myservice 
-        CREATE src/app/myservice.service.spec.ts (348 bytes) 
-        CREATE src/app/myservice.service.ts (138 bytes)
-        
-    ### myservice.service.ts
-          import { Injectable } from '@angular/core';
-          @Injectable({
-             providedIn: 'root' 
-          }) 
-          export class MyserviceService {
-             constructor() { }
-          }
+  We might come across a situation where we need some code to be used everywhere on the page.
+  we can access methods and properties across other components in the entire project.
+
+  ### To create a service, we need to make use of the command line as given below −
+      ng g service myservice
+
+      C:\projectA7\angular7-app>ng g service myservice 
+      CREATE src/app/myservice.service.spec.ts (348 bytes) 
+      CREATE src/app/myservice.service.ts (138 bytes)
+
+  ### myservice.service.ts
+        import { Injectable } from '@angular/core';
+        @Injectable({
+           providedIn: 'root' 
+        }) 
+        export class MyserviceService {
+           constructor() { }
+        }
           
-      Here, the injectable module is imported from the @angular/core. It contains the @Injectable method and a class called MyserviceService.
-          ```
-          import { MyserviceService } from './myservice.service';
-            @NgModule({ 
-               declarations: [
-                  SqrtPipe, 
-                  AppComponent, 
-                  NewCmpComponent, 
-                  ChangeTextDirective, 
-                  RoutingComponent 
-               ], 
-               imports: [ 
-                  BrowserModule, 
-                  AppRoutingModule
-               ], 
-               providers: [MyserviceService], 
-               bootstrap: [AppComponent] 
-            })
-            export class AppModule { }```
+    Here, the injectable module is imported from the @angular/core. It contains the @Injectable method and a class called MyserviceService.
+        ```
+        import { MyserviceService } from './myservice.service';
+          @NgModule({ 
+             declarations: [
+                SqrtPipe, 
+                AppComponent, 
+                NewCmpComponent, 
+                ChangeTextDirective, 
+                RoutingComponent 
+             ], 
+             imports: [ 
+                BrowserModule, 
+                AppRoutingModule
+             ], 
+             providers: [MyserviceService], 
+             bootstrap: [AppComponent] 
+          })
+          export class AppModule { }```
       
 ## Angular7 - Http Client:
     HttpClient will help us fetch external data, post to it, etc. We need to import the http module to make use of the http service.
