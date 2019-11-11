@@ -2,6 +2,8 @@
                       
 ## What,Why, use in (google)angular Js?
   - Angular 7 is an open source JavaScript framework.
+  - Angular is a modern MVVC framework and platform that is used to build enterprise Single-page Web Applications (or SPAs) using 
+    HTML and TypeScript. Angular is written in TypeScript
   - Angular is the most stable and most popular javascript based platform now-a-days.
   - Building web applications and apps.
     * Web developer
@@ -11,7 +13,7 @@
     * Front-end developer
     * JavaScript developer
   - Use JavaScript, html, and Typescript which is a superset of JavaScript.
-  - Angular is a modern MVVC framework and platform that is used to build enterprise Single-page Web Applications (or SPAs) using HTML and TypeScript. Angular is written in TypeScript
+  
   
 ## Angular Features(build-in) 
   - Angular provides built-in features for animation, http service, and materials which in turn have features such as auto-complete, navigation, toolbar, menus, etc.
