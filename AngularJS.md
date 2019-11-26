@@ -1,7 +1,7 @@
 # Angular @7
                       
 ## What,Why, use in (google)angular?
-  - Angular 7 is an open source JavaScript framework.
+  - Angular 7 is an open source,Typescript based JavaScript framework.
   - Angular is a modern MVVC framework and platform that is used to build enterprise Single-page Web Applications (or SPAs) using 
     HTML and TypeScript. Angular is written in TypeScript
   - Angular is the most stable and most popular javascript based platform now-a-days.
