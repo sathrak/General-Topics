@@ -112,13 +112,7 @@
     styles.css          - This is the style file required for the project.
     
     test.ts             - The unit test cases for testing the project will be handled.
-    
-    tsconfig.app.json   - This is used during compilation, it has the config details that need to be used to run the application.
-    
-    tsconfig.spec.json  - This helps maintain the details for testing.
-    
-    typings.d.ts        - It is used to manage the Typescript definition.
-    
+          
     
 ## Angular7 - Component
    ### What Is an Angular Component?
